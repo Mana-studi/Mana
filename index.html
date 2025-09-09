@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studi's Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <div id="mainContent">
+    <header>
+      <h1>Studi's Blog</h1>
+    </header>
+
+    <main>
+      <!-- Bagian Pertama -->
+      <section class="top-section fade-in">
+        <div class="left-box">
+          <img src="studi.png" alt="Foto Studi">
+          <h2>Studi</h2>
+        </div>
+        <div class="right-box">
+          <div class="info fade-in">
+            <h3>Informasi Pribadi</h3>
+            <p>Halo, nama saya Studi. Ini adalah blog pribadi saya tempat saya berbagi tentang diri saya.</p>
+            <button id="openDetail" class="detail-btn">Lihat Detail</button>
+          </div>
+          <div class="clock">
+            <span id="time">00:00:00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Kedua -->
+      <section class="bottom-section fade-in">
+        <div class="card">
+          <h3>Hobi</h3>
+          <ul>
+            <li>Membaca</li>
+            <li>Menulis</li>
+            <li>Fotografi</li>
+            <li>Menggambar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tujuan Hidup</h3>
+          <ul>
+            <li>Menjadi lebih baik setiap hari</li>
+            <li>Menginspirasi orang lain</li>
+            <li>Mencapai keseimbangan hidup</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Game Favorit</h3>
+          <ul>
+            <li>Minecraft</li>
+            <li>Valorant</li>
+            <li>Delta Force</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pop-up Detail -->
+  <div id="detailPopup" class="popup-overlay">
+    <div class="popup-content slide-in">
+      <span id="closePopup" class="close-btn">&times;</span>
+      <h2>Studi</h2>
+      <p><strong>Game Designer | Creative Visual Designer</strong></p>
+      <p>📍 Papua, Indonesia | 📧 studdi829@gmail.com | 📱 IG</p>
+      <p>🌐 YouTube: SharpBedrock | TikTok: @mana.fx | Instagram: Coming Soon</p>
+
+      <h3>Ringkasan Profil</h3>
+      <p>
+        Siswa SMK jurusan Perfilman dengan semangat tinggi di bidang game development, dan desain visual.
+        Berpengalaman membuat konten kreatif di YouTube dan TikTok, serta mengembangkan proyek personal
+        seperti game di Roblox dan berbagai desain poster/banner.
+      </p>
+
+      <h3>Keahlian Utama</h3>
+      <ul>
+        <li>membuat Alur Game</li>
+        <li>Desain Poster & Banner Digital</li>
+        <li>Typography & Editing Visual</li>
+        <li>Content Creation (YouTube, TikTok)</li>
+        <li>Roblox Game Creation (Basic)</li>
+        <li>Tools: Photoshop/CorelDraw,Alight Motion, Roblox Studio, And more</li>
+      </ul>
+
+      <h3>Proyek & Pengalaman Kreatif</h3>
+      <p><strong>Game Developer (Independen) – Roblox</strong><br>
+      Self-project | 20XX</p>
+      <p>Merancang dan membangun game di Roblox dengan fokus pada alur permainan desain permainan.</p>
+
+      <p><strong>Visual Designer – Poster & Typography Project</strong><br>
+      Personal Work | 20XX</p>
+      <p>Membuat berbagai poster digital, banner, dan desain typography untuk lirik lagu.</p>
+
+      <p><strong>Content Creator – YouTube & TikTok</strong><br>
+      Personal Project | 20XX–Sekarang</p>
+      <p>Mengelola channel YouTube dengan konten kreatif & gaming. Membuat konten di TikTok dengan fokus desain visual.</p>
+
+      <h3>Pendidikan</h3>
+      <p><strong>SMK – Jurusan Perfilman</strong><br>
+      Malang, 2023 – Sekarang (Kelas 2)</p>
+    </div>
+  </div>
+  <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop hidden>
+  <source src="lagu.mp3" type="audio/mpeg">
+  Browser kamu tidak mendukung audio.
+</audio>
+<p id="peringatan">HATI HATI SUARA KERAS</p>
+<button id="musicToggle" class="music-btn">🎵 Pause Music</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
